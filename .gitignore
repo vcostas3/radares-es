@@ -1,0 +1,87 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# Signing - NUNCA committar el keystore ni passwords
+android/key.properties
+android/keys/
+*.jks
+*.keystore
+
+# Local environment / dev artifacts
+.env
+.env.local
+.vscode/
+
+# Datasets locales descargados con scripts (no se distribuyen)
+/dataset_raw/
+
+# CLAUDE.md contiene credenciales del keystore + notas privadas - no subir
+CLAUDE.md
+
+# PDFs del proyecto - se distribuyen por otro canal, no por GitHub
+docs/
+
+# Config personal de Claude Code (no es del proyecto)
+.claude/
+
+# El usuario sólo quiere subir APKs como Release, no código fuente.
+# Ignoramos TODO el código y assets del proyecto.
+android/
+ios/
+linux/
+macos/
+windows/
+web/
+lib/
+test/
+assets/
+analysis_options.yaml
+pubspec.yaml
+pubspec.lock
+.metadata
+
+# APK suelto en la raíz (copia de trabajo del usuario, no se distribuye)
+/app-release.apk
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
